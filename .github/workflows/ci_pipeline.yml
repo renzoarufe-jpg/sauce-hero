@@ -29,7 +29,7 @@ jobs:
       run: playwright install chromium
 
     - name: Run Tests
-      run: python -m pytest --html=report.html
+      run: python -m pytest --headless --html=report.html
 
     - name: Upload Report
       if: always() 
